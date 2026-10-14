@@ -3,22 +3,21 @@
     .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
     .ink  { fill: #f0f0f0; }
     .mut  { fill: #808080; }
-    .ln   { opacity: 0; animation: fade .35s cubic-bezier(.16,1,.3,1) forwards; }
-    @keyframes fade { to { opacity: 1 } }
-    @keyframes type { to { width: 820px } }
+    /* No base opacity:0 — if a renderer drops animation, every line stays readable. */
+    .ln   { animation: fade .35s cubic-bezier(.16,1,.3,1) both; }
+    .wipe { animation: type .7s steps(26) both; }
+    @keyframes fade { from { opacity: 0 } to { opacity: 1 } }
+    @keyframes type { from { width: 0 }   to { width: 860px } }
     @keyframes blink { 0%,45% { opacity: 1 } 50%,100% { opacity: 0 } }
-    .t1 { animation-delay: .35s }  .t2 { animation-delay: 1.15s }
-    .t3 { animation-delay: 1.95s }  .t4 { animation-delay: 2.45s }
-    .t5 { animation-delay: 2.75s }  .t6 { animation-delay: 3.55s }
-    .t7 { animation-delay: 4.05s }  .t8 { animation-delay: 4.85s }
-    .cur { animation: blink 1.1s steps(1) 5.2s infinite; opacity: 0 }
-    .wipe { width: 0; animation: type .7s steps(28) forwards }
-    .w1 { animation-delay: .35s } .w2 { animation-delay: 1.95s } .w3 { animation-delay: 3.55s }
+    .t1 { animation-delay: .40s } .t2 { animation-delay: 1.20s } .t3 { animation-delay: 1.45s }
+    .t4 { animation-delay: 2.50s } .t5 { animation-delay: 2.80s } .t6 { animation-delay: 4.10s }
+    .w1 { animation-delay: .40s } .w2 { animation-delay: 2.00s } .w3 { animation-delay: 3.60s }
+    .cur { animation: blink 1.1s steps(1) 4.6s infinite }
   </style>
 
-  <clipPath id="c1"><rect class="wipe w1" x="0" y="52"  height="34" /></clipPath>
-  <clipPath id="c2"><rect class="wipe w2" x="0" y="196" height="34" /></clipPath>
-  <clipPath id="c3"><rect class="wipe w3" x="0" y="300" height="34" /></clipPath>
+  <clipPath id="c1"><rect class="wipe w1" x="0" y="52"  width="860" height="34" /></clipPath>
+  <clipPath id="c2"><rect class="wipe w2" x="0" y="196" width="860" height="34" /></clipPath>
+  <clipPath id="c3"><rect class="wipe w3" x="0" y="300" width="860" height="34" /></clipPath>
 
   <rect x="1" y="1" width="858" height="390" rx="14" fill="#0d0d0d" stroke="#1e1e1e" />
   <path d="M1 30 h858" stroke="#1e1e1e" />
@@ -31,22 +30,22 @@
   </g>
   <text class="mono ink ln t1" x="32" y="102" font-size="15">José<tspan class="mut" dx="10">— developer · Irvine · Telcabo Group</tspan></text>
 
-  <text class="mono ln t2" x="32" y="140" font-size="15"><tspan class="mut">#</tspan><tspan class="mut" dx="9">I've been a dreamer all my life. Code was the first thing</tspan></text>
-  <text class="mono mut ln t2" x="32" y="164" font-size="15">#  that let me see my ideas, not just imagine them.</text>
+  <text class="mono mut ln t2" x="32" y="140" font-size="15">#  I've been a dreamer all my life. Code was the first thing</text>
+  <text class="mono mut ln t3" x="32" y="164" font-size="15">#  that let me see my ideas, not just imagine them.</text>
 
   <g clip-path="url(#c2)">
     <text class="mono" x="32" y="216" font-size="15"><tspan class="mut">$</tspan><tspan class="ink" dx="9">ls work/</tspan></text>
   </g>
   <text class="mono ink ln t4" x="32"  y="246" font-size="15">atlas/</text>
-  <text class="mono ink ln t4" x="150" y="246" font-size="15">airfellow/</text>
-  <text class="mono ink ln t4" x="300" y="246" font-size="15">foral/</text>
-  <text class="mono ink ln t4" x="420" y="246" font-size="15">reeve/</text>
-  <text class="mono mut ln t5" x="32"  y="270" font-size="12.5">4 shipped · 1 fibre network, 1 cabin full of strangers, 1 estate, 1 Mac app</text>
+  <text class="mono ink ln t4" x="152" y="246" font-size="15">airfellow/</text>
+  <text class="mono ink ln t4" x="302" y="246" font-size="15">foral/</text>
+  <text class="mono ink ln t4" x="422" y="246" font-size="15">reeve/</text>
+  <text class="mono mut ln t5" x="32"  y="272" font-size="12.5">4 shipped · a fibre network, a cabin full of strangers, an estate, a Mac app</text>
 
   <g clip-path="url(#c3)">
     <text class="mono" x="32" y="320" font-size="15"><tspan class="mut">$</tspan><tspan class="ink" dx="9">open fridaydeveloper.com</tspan></text>
   </g>
-  <text class="mono mut ln t7" x="32" y="350" font-size="15">→ a notebook, not a pitch.</text>
+  <text class="mono mut ln t6" x="32" y="350" font-size="15">→ a notebook, not a pitch.</text>
 
-  <text class="mono ink cur" x="32" y="378" font-size="15">█</text>
+  <text class="mono ink cur" x="32" y="378" font-size="15">▌</text>
 </svg>
