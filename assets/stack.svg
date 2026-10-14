@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 300" width="860" height="300" role="img" aria-label="Stack: web, mobile, desktop, server, infra.">
+  <style>
+    .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .lbl  { fill: #808080; font-size: 10.5px; letter-spacing: 1.4px }
+    .val  { fill: #f0f0f0; font-size: 13.5px }
+    .dot  { fill: #3a3a3a; font-size: 13.5px }
+  </style>
+  <rect x="1" y="1" width="858" height="298" rx="14" fill="#0d0d0d" stroke="#1e1e1e" />
+  <text class="mono lbl" x="28" y="34">STACK</text>
+  <text class="mono" x="832" y="34" font-size="11.5" fill="#808080" text-anchor="end" letter-spacing="-.2">&lt;f/&gt;</text>
+  <path d="M28 52 h804" stroke="#1e1e1e" />
+
+  <text class="mono lbl" x="28" y="86">WEB</text>
+  <text class="mono val" x="152" y="86">TypeScript <tspan class="dot">·</tspan> Next.js <tspan class="dot">·</tspan> React 19 <tspan class="dot">·</tspan> Tailwind v4 <tspan class="dot">·</tspan> shadcn/ui <tspan class="dot">·</tspan> hand-rolled CSS</text>
+  <path d="M28 106 h804" stroke="#161616" />
+
+  <text class="mono lbl" x="28" y="140">MOBILE</text>
+  <text class="mono val" x="152" y="140">React Native <tspan class="dot">·</tspan> Expo SDK 54 <tspan class="dot">·</tspan> expo-router <tspan class="dot">·</tspan> Reanimated <tspan class="dot">·</tspan> Bluetooth LE</text>
+  <path d="M28 160 h804" stroke="#161616" />
+
+  <text class="mono lbl" x="28" y="194">DESKTOP</text>
+  <text class="mono val" x="152" y="194">Electron 43 <tspan class="dot">·</tspan> node-pty <tspan class="dot">·</tspan> xterm.js <tspan class="dot">·</tspan> dockview <tspan class="dot">·</tspan> node:sqlite</text>
+  <path d="M28 214 h804" stroke="#161616" />
+
+  <text class="mono lbl" x="28" y="248">SERVER</text>
+  <text class="mono val" x="152" y="248">PHP 8.4 <tspan class="dot">·</tspan> PostgreSQL + PostGIS <tspan class="dot">·</tspan> MySQL <tspan class="dot">·</tspan> Drizzle <tspan class="dot">·</tspan> raw PDO, no ORM</text>
+  <path d="M28 268 h804" stroke="#161616" />
+
+  <text class="mono lbl" x="28" y="288">INFRA</text>
+  <text class="mono val" x="152" y="288">Debian <tspan class="dot">·</tspan> Incus <tspan class="dot">·</tspan> nginx <tspan class="dot">·</tspan> Docker <tspan class="dot">·</tspan> Tailscale <tspan class="dot">·</tspan> Cloudflare <tspan class="dot">·</tspan> GitHub Actions</text>
+</svg>
