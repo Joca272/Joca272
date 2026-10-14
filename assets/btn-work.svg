@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 48" width="300" height="48" role="img" aria-label="See the work at fridaydeveloper.com">
-  <style>
-    .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-  </style>
-  <rect x="1" y="1" width="298" height="46" rx="10" fill="#f0f0f0" />
-  <text class="mono" x="26" y="29.5" font-size="14" font-weight="600" fill="#0d0d0d">fridaydeveloper.com</text>
-  <text class="mono" x="274" y="29.5" font-size="14" font-weight="600" fill="#0d0d0d" text-anchor="end">→</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 52" width="304" height="52" role="img" aria-label="See the work at fridaydeveloper.com">
+  <style>.mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace }</style>
+  <rect x="1" y="1" width="302" height="50" rx="11" fill="#f0f0f0"/>
+  <text class="mono" x="26" y="31.5" font-size="13.5" font-weight="600" fill="#0d0d0d" letter-spacing=".2">see the work</text>
+  <text class="mono" x="278" y="31.5" font-size="13.5" font-weight="600" fill="#0d0d0d" text-anchor="end">→</text>
 </svg>

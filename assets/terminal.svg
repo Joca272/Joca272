@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 648" width="860" height="648" role="img" aria-label="Terminal: friday hello. Jose, developer in Irvine. Story, stack and work listing.">
+  <style>
+    .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .ink { fill: #f0f0f0 } .mut { fill: #808080 } .dim { fill: #3a3a3a }
+    /* No base opacity:0 — if a renderer drops animation, the whole terminal still reads. */
+    .ln   { animation: fade .3s cubic-bezier(.16,1,.3,1) both }
+    .wipe { animation: type .6s steps(22) both }
+    @keyframes fade { from { opacity: 0 } to { opacity: 1 } }
+    @keyframes type { from { width: 0 } to { width: 860px } }
+    @keyframes blink { 0%,45% { opacity: 1 } 50%,100% { opacity: 0 } }
+    .w1 { animation-delay: .30s } .w2 { animation-delay: 1.60s }
+    .w3 { animation-delay: 3.40s } .w4 { animation-delay: 4.90s }
+    .b1 { animation-delay: .95s } .b2 { animation-delay: 1.05s } .b3 { animation-delay: 1.15s }
+    .s1 { animation-delay: 2.25s } .s2 { animation-delay: 2.40s } .s3 { animation-delay: 2.55s }
+    .s4 { animation-delay: 2.75s } .s5 { animation-delay: 2.90s }
+    .k1 { animation-delay: 3.95s } .k2 { animation-delay: 4.07s } .k3 { animation-delay: 4.19s }
+    .k4 { animation-delay: 4.31s } .k5 { animation-delay: 4.43s }
+    .l1 { animation-delay: 5.45s } .l2 { animation-delay: 5.70s }
+    .cur { animation: blink 1.1s steps(1) 6.0s infinite }
+  </style>
+
+  <clipPath id="p1"><rect class="wipe w1" x="0" y="46"  width="860" height="26"/></clipPath>
+  <clipPath id="p2"><rect class="wipe w2" x="0" y="182" width="860" height="26"/></clipPath>
+  <clipPath id="p3"><rect class="wipe w3" x="0" y="346" width="860" height="26"/></clipPath>
+  <clipPath id="p4"><rect class="wipe w4" x="0" y="510" width="860" height="26"/></clipPath>
+
+  <!-- window -->
+  <rect x="1" y="1" width="858" height="646" rx="14" fill="#0d0d0d" stroke="#1e1e1e"/>
+  <path d="M1 30 h858" stroke="#1e1e1e"/>
+  <g fill="#2a2a2a"><circle cx="24" cy="15.5" r="4.5"/><circle cx="42" cy="15.5" r="4.5"/><circle cx="60" cy="15.5" r="4.5"/></g>
+  <text class="mono mut" x="430" y="20" font-size="11.5" text-anchor="middle" letter-spacing=".4">friday-developer — zsh</text>
+  <text class="mono mut" x="836" y="20" font-size="11.5" text-anchor="end" letter-spacing="-.2">&lt;f/&gt;</text>
+
+  <!-- $ friday hello -->
+  <g clip-path="url(#p1)">
+    <text class="mono" x="32" y="64" font-size="15"><tspan class="mut">$</tspan><tspan class="ink" dx="9">friday hello</tspan></text>
+  </g>
+
+  <!-- ascii wordmark + identity -->
+  <g class="mono ink" font-size="13.5" xml:space="preserve">
+    <text class="ln b1" x="36" y="100">  __   __      __ __</text>
+    <text class="ln b1" x="36" y="117"> / /  / _|    / / \ \</text>
+    <text class="ln b2" x="36" y="134">/ /  | |_    / /   \ \</text>
+    <text class="ln b2" x="36" y="151">\ \  |  _|  / /    / /</text>
+    <text class="ln b3" x="36" y="168"> \_\ |_|   /_/    /_/</text>
+  </g>
+  <g class="mono" font-size="14">
+    <text class="ink ln b2" x="266" y="117">José <tspan class="dim">—</tspan> <tspan class="mut">developer, building for the web, phones and desks</tspan></text>
+    <text class="mut ln b3" x="266" y="140">Irvine <tspan class="dim">·</tspan> Telcabo Group <tspan class="dim">·</tspan> fridaydeveloper.com</text>
+  </g>
+
+  <!-- $ cat story.txt -->
+  <g clip-path="url(#p2)">
+    <text class="mono" x="32" y="200" font-size="15"><tspan class="mut">$</tspan><tspan class="ink" dx="9">cat story.txt</tspan></text>
+  </g>
+  <g class="mono ink" font-size="14.5">
+    <text class="ln s1" x="36" y="230">I've been a dreamer all my life. Code was the first thing that let</text>
+    <text class="ln s2" x="36" y="252">me see my ideas, not just imagine them. That hasn't changed — I'm</text>
+    <text class="ln s3" x="36" y="274">still chasing the same feeling: watching something in my head</text>
+    <text class="ln s3" x="36" y="296">become something real.</text>
+    <text class="mut ln s4" x="36" y="326">Some days it's a real project for someone who needs it to work on</text>
+    <text class="mut ln s5" x="36" y="348">Monday. Some days it's just an idea I had to try. Both count.</text>
+  </g>
+
+  <!-- $ friday stack -->
+  <g clip-path="url(#p3)">
+    <text class="mono" x="32" y="380" font-size="15"><tspan class="mut">$</tspan><tspan class="ink" dx="9">friday stack</tspan></text>
+  </g>
+  <g class="mono" font-size="13.5">
+    <g class="ln k1"><text class="mut" x="36" y="410">web</text><text class="ink" x="146" y="410">TypeScript <tspan class="dim">·</tspan> Next.js <tspan class="dim">·</tspan> React 19 <tspan class="dim">·</tspan> Tailwind v4 <tspan class="dim">·</tspan> shadcn/ui</text></g>
+    <g class="ln k2"><text class="mut" x="36" y="434">mobile</text><text class="ink" x="146" y="434">React Native <tspan class="dim">·</tspan> Expo SDK 54 <tspan class="dim">·</tspan> Reanimated <tspan class="dim">·</tspan> Bluetooth LE</text></g>
+    <g class="ln k3"><text class="mut" x="36" y="458">desktop</text><text class="ink" x="146" y="458">Electron 43 <tspan class="dim">·</tspan> node-pty <tspan class="dim">·</tspan> xterm.js <tspan class="dim">·</tspan> node:sqlite</text></g>
+    <g class="ln k4"><text class="mut" x="36" y="482">server</text><text class="ink" x="146" y="482">PHP 8.4 <tspan class="dim">·</tspan> PostgreSQL + PostGIS <tspan class="dim">·</tspan> MySQL <tspan class="dim">·</tspan> raw PDO, no ORM</text></g>
+    <g class="ln k5"><text class="mut" x="36" y="506">infra</text><text class="ink" x="146" y="506">Debian <tspan class="dim">·</tspan> Incus <tspan class="dim">·</tspan> nginx <tspan class="dim">·</tspan> Tailscale <tspan class="dim">·</tspan> Cloudflare <tspan class="dim">·</tspan> GH Actions</text></g>
+  </g>
+
+  <!-- $ ls work/ -->
+  <g clip-path="url(#p4)">
+    <text class="mono" x="32" y="528" font-size="15"><tspan class="mut">$</tspan><tspan class="ink" dx="9">ls work/</tspan></text>
+  </g>
+  <g class="mono" font-size="14">
+    <text class="ink ln l1" x="36" y="558">atlas/<tspan dx="34">airfellow/</tspan><tspan dx="34">foral/</tspan><tspan dx="34">reeve/</tspan></text>
+    <text class="mut ln l2" x="36" y="584" font-size="13">→ 4 shipped. the screens, the write-ups and the hard parts are on the site.</text>
+  </g>
+
+  <text class="mono ink cur" x="36" y="616" font-size="15">▌</text>
+</svg>
